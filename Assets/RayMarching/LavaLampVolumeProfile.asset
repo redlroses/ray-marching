@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: LavaLampVolumeProfile
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.VolumeProfile
+  components:
+  - {fileID: 5064322173066915052}
+--- !u!114 &5064322173066915052
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a7ad91bbb12364ebb7699815f61688, type: 3}
+  m_Name: LavaLampVolume
+  m_EditorClassIdentifier: Assembly-CSharp::RayMarching.LavaLampVolume
+  active: 1
+  isActive:
+    m_OverrideState: 1
+    m_Value: 1
+  particleShape:
+    m_OverrideState: 1
+    m_Value: 0
+  smoothMinK:
+    m_OverrideState: 1
+    m_Value: 0.911
+  sphereCount:
+    m_OverrideState: 1
+    m_Value: 3
+  speed:
+    m_OverrideState: 1
+    m_Value: 0.2
+  bottomPoolPercent:
+    m_OverrideState: 1
+    m_Value: 6.8
+  topPoolPercent:
+    m_OverrideState: 1
+    m_Value: 4.6
+  coneRadiusBottomPercent:
+    m_OverrideState: 1
+    m_Value: 100
+  coneRadiusTopPercent:
+    m_OverrideState: 1
+    m_Value: 40
+  minParticlePercent:
+    m_OverrideState: 1
+    m_Value: 8.9
+  maxParticlePercent:
+    m_OverrideState: 1
+    m_Value: 13.6
+  horizontalDispersalPercent:
+    m_OverrideState: 1
+    m_Value: 21.2
+  verticalMinPercent:
+    m_OverrideState: 1
+    m_Value: -90.6
+  verticalMaxPercent:
+    m_OverrideState: 1
+    m_Value: 75
+  tempBuoyancySkew:
+    m_OverrideState: 1
+    m_Value: 16.6
+  lingerStrength:
+    m_OverrideState: 1
+    m_Value: 17

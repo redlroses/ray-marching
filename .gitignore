@@ -1,0 +1,67 @@
+# Unity directories
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+
+# Build directories
+/[Bb]uild/
+/[Bb]uilds/
+
+# Third-party tools directories
+.vs/
+.vscode/
+.gradle/
+.idea/
+.agents/
+ExportedObj/
+/VideoEditor/
+
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.vsconfig
+
+*.log
+
+########################################
+# Bakery
+
+# Ignore Bakery Assets folder
+/[Aa]ssets/Bakery/*
+
+# Never ignore these Bakery Asset files and their meta
+!/[Aa]ssets/Bakery/ftLightmaps.cs*
+!/[Aa]ssets/Bakery/ftLightmapsStorage.cs*
+!/[Aa]ssets/Bakery/ftLocalStorage.cs*
+!/[Aa]ssets/Bakery/ftGlobalStorage.cs*
+!/[Aa]ssets/Bakery/BakeryProjectSettings.cs*
+
+#Ignore Bakery Editor folder
+/[Aa]ssets/Editor/x64/Bakery/*
+
+#Unignore subdirectories only
+!/[Aa]ssets/Editor/x64/Bakery/*/
+
+#Re-ignore all *files* in subdirectories
+/[Aa]ssets/Editor/x64/Bakery/hwtestdata/*
+/[Aa]ssets/Editor/x64/Bakery/lightingDataChunks/*
+/[Aa]ssets/Editor/x64/Bakery/shaderSrc/*
+/[Aa]ssets/Editor/x64/Bakery/scripts/*
+
+# Never ignore these Bakery Editor files and their meta
+!/**/ftModelPostProcessor.cs*
+!/**/ftSavedPadding2.cs*
+
+# Learning & Educational Materials
+/ShaderGuide/
+

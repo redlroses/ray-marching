@@ -1,0 +1,136 @@
+# Macros
+[attr]lfs filter=lfs diff=lfs merge=lfs -text
+[attr]unity-yaml merge=unityyamlmerge eol=lf diff=yaml
+# Normalize line endings in all text files 
+* text-auto
+# Source files
+*.cs diff=csharp text
+*.json text
+*.xml text
+# Shaders
+*.cginc text
+*.glslinc text
+*.shader text
+*.hlsl text
+*.compute text
+*.raytrace text
+*.shadergraph text
+*.shadersubgraph text
+# Assets
+# By default treat .asset as binary without lfs
+*.asset binary
+# .. But allow to treat them as yaml for settings and similar usages
+ProjectSettings/**.asset unity-yaml
+Assets/[Ss]ettings/**.asset unity-yaml
+*[Ss]ettings.asset unity-yaml
+*[Cc]onfig.asset unity-yaml
+*[Pp]rofile.asset unity-yaml
+# Specific binary .asset file patterns, tend to be big - use lfs
+Assets/**/*[Tt]errain*.asset lfs
+Assets/**/*[Nn]av[Mm]esh*.asset lfs
+Assets/**/*LightingData.asset lfs
+Assets/**/*SDF.asset lfs
+# YAML assets
+*.brush unity-yaml
+*.flare unity-yaml
+*.fontsettings unity-yaml
+*.lighting unity-yaml
+*.mat unity-yaml
+*.meta unity-yaml
+*.mixer unity-yaml
+*.anim filter=lfs diff=lfs merge=lfs -text
+*.controller unity-yaml
+*.override[Cc]ontroller unity-yaml
+*.playable unity-yaml
+*.prefab unity-yaml
+*.render[Tt]exture unity-yaml
+*.signal unity-yaml
+*.spriteatlas unity-yaml
+*.spriteatlasv2 unity-yaml
+*.terrainlayer unity-yaml
+*.unity unity-yaml
+*.physicMaterial unity-yaml
+*.physicsMaterial2D unity-yaml
+*.vfx unity-yaml
+*.preset unity-yaml
+## JSON assets
+*.asmdef text
+*.asmref text
+*.inputactions text
+*.shadergraph text
+*.shadersubgraph text
+# Unity UI Toolkit files
+*.tss text diff=css
+*.uss text diff=css 
+*.uxml text
+# Other big binary assets
+*.unitypackage lfs
+*.cubemap lfs
+# 3D models
+*.3dm lfs
+*.3ds lfs
+*.blend lfs
+*.c4d lfs
+*.collada lfs
+*.dae lfs
+*.dxf lfs
+*.fbx lfs
+*.jas lfs
+*.lws lfs
+*.lxo lfs
+*.ma lfs
+*.max lfs
+*.mb lfs
+*.obj lfs
+*.ply lfs
+*.skp lfs
+*.stl lfs
+*.ztl lfs
+# Images
+*.bmp lfs
+*.exr lfs
+*.gif lfs
+*.hdr lfs
+*.iff lfs
+*.jpeg lfs
+*.jpg lfs
+*.png lfs
+*.psd lfs
+*.tga lfs
+*.tif lfs
+*.tiff lfs
+*.webp lfs
+# Audio
+*.aif lfs
+*.aiff lfs
+*.mp3 lfs
+*.ogg lfs
+*.wav lfs
+# Video
+*.avi lfs
+*.flv lfs
+*.mov lfs
+*.mp4 lfs
+*.mpeg lfs
+*.mpg lfs
+*.ogv lfs
+*.wmv lfs
+*.mkv lfs
+# Fonts
+*.otf lfs
+*.ttf lfs
+# Text
+*.txt text
+*.md text
+*.csv text
+# Archives
+*.7z lfs
+*.gz lfs
+*.rar lfs
+*.tar lfs
+*.zip lfs
+# Compiled code
+*.dll lfs
+*.pdb lfs
+*.so lfs
+*.a lfs
